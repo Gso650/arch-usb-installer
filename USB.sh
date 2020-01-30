@@ -106,6 +106,7 @@ grub-install --target=i386-pc /dev/${DISK}
 grub-mkconfig -o /boot/grub/grub.cfg
 ehco "Install Grub Bios Done"
 
+exit
 umount /dev/${DISK}1
 umount /dev/${DISK}2
 
