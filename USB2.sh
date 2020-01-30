@@ -14,6 +14,7 @@ mount /dev/${DISK} /mnt/boot/efi
 arch-chroot /mnt
 grub-install --target=x86_64-efi --edi-directory=/boot/efi --removable
 
+exit
 umount /dev/${DISK}1
 umount /dev/${DISK}2
 
