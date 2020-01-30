@@ -14,7 +14,7 @@ read -p "Choose Your Disk:" DISK
 read -p "Parted To EFI(M):" EFI
 read -p "Parted To Root(G):" ROOT
 read -p "Are You Sure About Decssion? Enter N to Restart " AX
-if [[ ${AX} = N]]; then
+if [[ ${AX} = N ]]; then
   exit
 fi
 
