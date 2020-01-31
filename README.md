@@ -1,11 +1,6 @@
 # ArchLinux-Usb-Installer
 Install Arch Linux on a USB key
 
-# Step
-
-Curl -L -O https://github.com/Gso650/arch-usb-installer/raw/master/USB.sh
-Curl -L -O https://github.com/Gso650/arch-usb-installer/raw/master/USB2.sh
-
 # Note
 
 1.You need a USB Flash Disk (>=8G)and VirtualBox with Extension Pack
