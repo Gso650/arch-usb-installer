@@ -28,14 +28,14 @@ mkinitcpio -P
 echo "Create New Initramfs Done"
 
 #14.Install Grub
-echo "Install Grub Bios"
+echo "Install Grub"
 pacman -S grub efibootmgr
 grub-install --target=i386-pc /dev/${DISK}
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --removable --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
 echo "Install Grub Done"
 
-read -p "Do you want poweroff? Enter Y to shutdown" CX
+read -p "Do you want to poweroff? Enter Y to shutdown" CX
 
 if [[ ${CX} = Y ]]; then
   poweroff
