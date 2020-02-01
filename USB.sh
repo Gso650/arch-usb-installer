@@ -22,7 +22,7 @@ else
   exit
 fi
 
-read -p "Are you sure your choice is correct? Enter N to restart " AX
+read -p "Are you sure your choice is correct? Enter N to restart: " AX
 
 if [[ ${AX} = N ]]; then
   exit
