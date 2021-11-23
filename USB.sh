@@ -96,10 +96,10 @@ echo "Wipe And Mount USB Disk Done"
 #4.Using China Mirrorlist
 cd /etc/pacman.d
 cp mirrorlist mirrorlist.bk
-cat mirrorlist.bk | grep China -A 1 | grep -v '-' > mirrorlist
-sed -i '/neusoft/d;/cqu/d;/redrock/d;/lzu/d;/zju/d' mirrorlist
+cat mirrorlist.bk | grep China -A 20 | grep -v '-' > mirrorlist
+sed -i '/neusoft/d;/cqu/d;/redrock/d;/lzu/d;/zju/d;/hit/d;/nju/d;/dgut/d' mirrorlist
 cd
-echo "Change China Source Done"
+echo "Change Chinese Source Done"
 
 #5.Install System
 if [[ ${PARTED} = 1 ]]; then
